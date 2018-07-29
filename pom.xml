@@ -307,9 +307,9 @@
 		        <artifactId>tomcat7-maven-plugin</artifactId> 
 		        <version>2.2</version> 
 		        <configuration> 
-		        <url>http://localhost:8080/manager/text</url> <!-- tomcat管理路径 -->
-		            <server>tomcat</server> <!-- 与settings.xml文件中Server的id相同 -->
-		          <!--  <path>/myapp</path>  应用的部署位置 -->
+		        <url>http://localhost:8080/manager/text</url> 
+		            <server>tomcat</server> <!-- ${mvn_home}/settings.xml, <server><id>xxx</id></server> -->
+                    <path>/crm</path> <!--  contextpath in tomcat runtime -->
 		        </configuration> 
 		    </plugin>
 		    <plugin>
