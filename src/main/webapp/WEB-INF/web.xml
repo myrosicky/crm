@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- 用于单点退出  -->
+<!-- 
+<listener>  <listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>
+
+</listener>
+
+<filter>
+
+    <filter-name>CAS Single Sign Out Filter</filter-name>
+
+<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+
+</filter>
+
+用于单点登录 
+
+<filter>
+
+<filter-name>CAS Filter</filter-name>
+
+<filter-class>edu.yale.its.tp.cas.client.filter.CASFilter</filter-class>
+
+下面两个为验证地址，即cas server的地址，如果使用https验证，地址为https://hostname:8443字样
+
+    <init-param>
+
+      <param-name>edu.yale.its.tp.cas.client.filter.loginUrl</param-name>
+
+	<param-value>https://localhost:8443/cas-server/login</param-value>
+
+    </init-param>
+
+    <init-param>
+
+       <param-name>edu.yale.its.tp.cas.client.filter.validateUrl</param-name>
+
+       <param-value>https://localhost:8443/cas-server/serviceValidate</param-value>
+
+</init-param>
+
+本工程的URL，被拦截的地址
+
+    <init-param>
+
+       <param-name>edu.yale.its.tp.cas.client.filter.serverName</param-name>
+
+       <param-value>localhost:8443</param-value>
+
+</init-param>
+
+</filter>
+
+<filter-mapping>
+
+    <filter-name>CAS Single Sign Out Filter</filter-name>
+
+    <url-pattern>/*</url-pattern>
+
+</filter-mapping>
+
+<filter-mapping>
+
+  <filter-name>CAS Filter</filter-name>
+
+    <url-pattern>/*</url-pattern>
+
+</filter-mapping> -->
+ 	<filter>  
+	    <filter-name>encodingFilter</filter-name>  
+	    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>  
+	    <init-param>  
+	       <param-name>encoding</param-name>  
+	       <param-value>UTF-8</param-value>  
+	    </init-param>  
+	    <init-param>  
+	       <param-name>forceEncoding</param-name>  
+	       <param-value>true</param-value>  
+	    </init-param>  
+	</filter>  
+	<filter-mapping>  
+	    <filter-name>encodingFilter</filter-name>  
+	    <url-pattern>/*</url-pattern>  
+	</filter-mapping> 
+	
+	
+	<!-- Filters -->
+	<!-- <filter>
+        <filter-name>struts2-prepare</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>struts2-execute</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsExecuteFilter</filter-class>
+    </filter> -->
+	
+	<filter>
+        <filter-name>struts2-prepareAndexecute</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+	
+	<filter-mapping>
+        <filter-name>struts2-prepareAndexecute</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- <filter-mapping>
+        <filter-name>struts2-execute</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping> -->
+    
+  <welcome-file-list>
+  	<welcome-file>index.htm</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

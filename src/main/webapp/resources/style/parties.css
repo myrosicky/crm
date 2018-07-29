@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+
+#myClient{
+	width: 81%;
+	float: left;
+	text-align: left;
+	margin-top:0px;
+}
+
+#myClient ul li ,#clientInfoList ul li{
+	float: left;
+	list-style-type: none;
+	margin: 0;
+}
+
+#myClient ul>li a {
+	border: 1px ridge rgb(245, 192, 192);
+	color: black;
+}
+#myClient ul>li:first-child a {
+	color: black;
+}
+
+#myClient span{
+	float: right;
+	margin-right: 20px;
+	border: 1px groove;
+}
+#myClient span input{
+	border: none;
+}
+
+#myClient span i.magnifier{
+	font-size: 17px;
+	padding: 6px;
+}
+
+#myClient span i.downTriangle{
+	margin-left: 0px;
+}
+#clientInfoList{
+	width: 81%;
+	float: left;
+	margin:0;
+	height: 500px;
+}
+
+#myClient ul[name=category] {
+	margin-left: 50px;
+}
+
+#clientInfoList{
+	width: 81%
+}
+
+#clientInfoList>p{
+	padding: 20px;
+	margin-top: 40px;
+	width: 150px;
+	margin-left: 43%;
+}
+#clientInfoList a[name=selectAll]{
+	background-color: rgb(83, 83, 162);
+}
+
+#clientInfoList a[name=delete]{
+	background-color: rgb(66, 194, 184);
+}
+
+#clientInfoList ul[name=buttonGroup]{
+	width: inherit;
+	margin-left: 50px;
+	text-align: left;
+	float: left;
+}
+
+#clientInfoList ul[name=clientInfo]{
+	margin-left: 50px;
+	width: inherit;
+}
+
+#clientInfoList ul[name=clientInfo] li{
+	width: 100%;
+	text-align: left;
+}
+
+
+#clientInfoList ul[name=clientInfo] li>p{
+	border-bottom: 1px dotted black;
+	padding-bottom: 15px;
+	margin-left: 0px;
+	font-size: 13px;
+	color: rgb(167, 167, 167);
+}
+
+
+@font-face {font-family: 'downTriangle';
+    src: url('../svg/downTriangle.eot'); /* IE9*/
+    src: url('../svg/downTriangle.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../svg/downTriangle.woff') format('woff'), /* chrome、firefox */
+    url('../svg/downTriangle.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../svg/downTriangle.svg#downTriangle') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {font-family: 'verticalString';
+    src: url('../svg/verticalString.eot'); /* IE9*/
+    src: url('../svg/verticalString.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../svg/verticalString.woff') format('woff'), /* chrome、firefox */
+    url('../svg/verticalString.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../svg/verticalString.svg#verticalString') format('svg'); /* iOS 4.1- */
+}
+
+.downTriangle{
+    font-family:"downTriangle" !important;
+    font-size:3px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    border-left: 1px dotted black;
+	margin-left: 10px;
+	padding: 3px;
+}
+
+
+.verticalString{
+    font-family:"verticalString" !important;
+    font-size:19px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+div[name=taskInfo] {
+	display: none;
+    position: absolute;
+    height: 250px;
+    width: 210px;
+    border: 1px solid;
+    background-color: white;
+}
+
+div[name=taskInfo] ul{
+	width: 100%;
+	padding-left: 0;
+}
+div[name=taskInfo] ul li{
+	width: 90%;
+	list-style-type: none;
+	padding: 5px;
+}
+
+div[name=taskInfo] ul li select{
+	width: 90%;
+}
+
+div[name=taskInfo] ul a[name="btnSave"] {
+	background-color: #A5A565;
+}
+
+
+div[name=taskInfo] ul a[name="btnCancel"] {
+	font-size: 6px;
+}

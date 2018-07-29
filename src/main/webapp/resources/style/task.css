@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+
+#myTask {
+	width: 81%;
+	float: left;
+	text-align: left;
+	margin-top:0px;
+}
+
+#myTask ul li ,#taskInfoList ul li{
+	float: left;
+	list-style-type: none;
+	margin: 0;
+}
+
+#myTask ul>li a {
+	border: 1px ridge rgb(245, 192, 192);
+	color: black;
+}
+
+#myTask ul[name=category] {
+	margin-left: 50px;
+}
+
+
+#taskInfoList {
+	width: 81% ;
+	float: left;
+}
+
+
+#taskInfoList>ul {
+	margin-left: 50px;
+    padding-left: 0px;
+}
+
+#taskInfoList>ul li{
+	width: 100%;
+	text-align: left;
+}
+
+#taskInfoList p[name=tip], #taskInfoList p[name=noMoreTip]{
+	padding: 20px;
+	margin-top: 40px;
+	width: 150px;
+	margin-left: 43%;
+}
+
+
+#taskInfoList a[name=btnLoadMore] {
+	background-color : red;
+	
+}
+
+#taskInfoList ul[name=buttonGroup]{
+	width: inherit;
+	margin-left: 50px;
+	text-align: left;
+	float: left;
+}
+
+
