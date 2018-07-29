@@ -13,4 +13,6 @@ public interface FileDao {
 
 	public void save(File uploadFile, String fileName);
 
+	public void save(File file);
+
 }

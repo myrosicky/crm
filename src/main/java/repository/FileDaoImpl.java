@@ -34,4 +34,10 @@ public class FileDaoImpl implements FileDao {
 
 	}
 
+	@Override
+	public void save(File file) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

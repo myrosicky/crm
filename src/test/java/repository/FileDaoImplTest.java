@@ -29,7 +29,7 @@ public class FileDaoImplTest {
 
 	@Test
 	public void testSave() {
-		fileDao.save(new File("/home/ll/Downloads/redis-2.8.24.tar.gz"));
+		fileDao.save(new File(""));
 	}
 
 }
