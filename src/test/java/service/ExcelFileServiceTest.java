@@ -22,7 +22,7 @@ public class ExcelFileServiceTest extends commTest {
 	
 	@Test
 	public void testParse() {
-		excelFileService.parse(new File("/home/ll/Documents/test.xls"));
+		excelFileService.parse(new File(""));
 	}
 	
 	public static void main(String[] args){
