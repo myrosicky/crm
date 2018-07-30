@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import po.Party;
-import repository.PartyRepository;
+import repository.iface.PartyRepository;
 import service.iface.UploadOpsService;
 import vo.UploadDataVo;
 
