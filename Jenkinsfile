@@ -7,6 +7,7 @@ node {
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
       mvnHome = tool 'apache-maven-3.3.9'
+      env.JAVA_HOME = tool 'jdk1.8'
    }
    stage('Build') {
       // Run the maven build

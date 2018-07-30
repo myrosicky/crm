@@ -307,7 +307,7 @@
 		        <artifactId>tomcat7-maven-plugin</artifactId> 
 		        <version>2.2</version> 
 		        <configuration> 
-		        <url>http://localhost:8080/manager/text</url> 
+		        <url>http://localhost:8092/manager/text</url> 
 		            <server>tomcat</server> <!-- ${mvn_home}/settings.xml, <server><id>xxx</id></server> -->
                     <path>/crm</path> <!--  contextpath in tomcat runtime -->
 		        </configuration> 
