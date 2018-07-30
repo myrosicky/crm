@@ -13,7 +13,7 @@ node {
       // Run the maven build
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
-         sh "cp **/target/*.war /usr/apache-tomcat-7.0.70/webapps"
+         sh "cp /target/crm.war /usr/apache-tomcat-7.0.70/webapps"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
